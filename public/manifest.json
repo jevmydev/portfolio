@@ -1,0 +1,24 @@
+{
+    "name": "portfolio",
+    "short_name": "portfolio",
+    "description": "Bienvenido 👋. Soy Jeremy. Frontend Developer. Llevo más de dos años desarrollando experiencias de usuario atractivas y funcionales.",
+    "keywords": ["Jeremy Díaz", "jevmydev", "Portfolio", "Frontend Developer", "Web Developer"],
+    "author": "Jeremy Díaz",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jevmydev/portfolio.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jevmydev/portfolio/issues"
+    },
+    "icons": [
+        {
+            "src": "/favicon.webp",
+            "sizes": "200x200",
+            "type": "image/webp"
+        }
+    ],
+    "display": "standalone",
+    "start_url": "/index.html",
+    "homepage": "https://jeremydiaz.netlify.app/"
+}
