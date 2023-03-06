@@ -1,32 +1,3 @@
-export interface LinkTypes {
-    id: string;
-    href: string;
-    title: string;
-    isActive: boolean;
-}
-
-export interface SocialLinkTypes extends LinkTypes {
-    Icon: ({ width, height, stroke }: SocialLinkIconProps) => JSX.Element;
-}
-
-interface SocialLinkIconProps {
-    width?: string;
-    height?: string;
-    stroke?: string;
-}
-
-interface SkillsIconProps {
-    width?: string;
-    height?: string;
-    fill?: string;
-}
-
-export interface SkillsTypes {
-    id: string;
-    title: string;
-    Icon: ({ width, height, fill }: SkillsIconProps) => JSX.Element;
-}
-
 interface ProjectsTypes {
     id: string;
     title: string;
@@ -37,6 +8,13 @@ interface ProjectsTypes {
     skills: Array<SkillsTypes>;
 }
 
+export interface LinkTypes {
+    id: string;
+    href: string;
+    title: string;
+    isActive: boolean;
+}
+
 export interface LinkTypesProps {
     href: string;
     target?: string;
@@ -44,6 +22,23 @@ export interface LinkTypesProps {
     removeSpacing?: boolean;
     isActive?: boolean;
     children: JSX.Element | string;
+}
+
+export interface SocialLinkTypes extends LinkTypes {
+    Icon: ({ width, height, stroke }: SkillsIconProps) => JSX.Element;
+}
+
+export interface SkillsTypes {
+    id: string;
+    title: string;
+    Icon: ({ width, height, fill }: SkillsIconProps) => JSX.Element;
+}
+
+interface SkillsIconProps {
+    width?: string;
+    height?: string;
+    fill?: string;
+    stroke?: string;
 }
 
 export interface ButtonTypesProps {
