@@ -3,6 +3,12 @@ import { v4 as uuid } from "uuid";
 export const navLinks = [
     {
         id: uuid(),
+        href: "/#hero",
+        title: "Inicio",
+        isActive: false
+    },
+    {
+        id: uuid(),
         href: "/#projects",
         title: "Proyectos",
         isActive: false
