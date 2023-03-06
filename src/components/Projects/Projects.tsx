@@ -1,11 +1,11 @@
-import { SUBTITLE_CLASS } from "../../constants/stylesClass";
+import { SUBTITLE_COLOR_CLASS } from "../../constants/stylesClass";
 import { type ProjectsTypes } from "../../types";
 import { projects } from "../../mocks/projects";
 
 import ProjectsItem from "./ProjectsItem";
 
 export const Projects = () => {
-    const subtitleClass = SUBTITLE_CLASS;
+    const subtitleClass = SUBTITLE_COLOR_CLASS;
 
     return (
         <section id="projects">
