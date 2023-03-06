@@ -10,7 +10,7 @@ export const NavLink: React.FC<NavLinkProps> = ({ link }) => {
     const { href, title, isActive } = link;
 
     return (
-        <li>
+        <li className="block w-full sm:w-auto">
             <Link href={href} title={title} isActive={isActive}>
                 {title}
             </Link>

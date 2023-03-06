@@ -10,7 +10,7 @@ export const Contact = () => {
         <section id="contact">
             <div className="max-w-screen-xl mx-auto pt-28 p-4">
                 <h2 className={subtitleClass}>Contacto</h2>
-                <div className="pt-28 flex items-start justify-between">
+                <div className="pt-28 flex flex-col gap-8 items-start justify-start sm:flex-row sm:justify-between">
                     <div className="max-w-md flex flex-col gap-8">
                         <p>Gracias por llegar hasta aquí.</p>
                         <p>Puedes contactar conmigo a través de mis redes sociales o rellenando el formulario.</p>

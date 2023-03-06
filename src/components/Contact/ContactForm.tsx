@@ -18,7 +18,9 @@ export const ContactForm = () => {
                 Mensaje
                 <textarea className={inputClass} id={messageInputId} placeholder="Me gustó tu portfolio..."></textarea>
             </label>
-            <input className={submitInputClass} type="submit" />
+            <div>
+                <input className={submitInputClass} type="submit" />
+            </div>
         </form>
     );
 };

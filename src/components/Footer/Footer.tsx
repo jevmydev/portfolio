@@ -7,7 +7,7 @@ import ContactSocial from "../Contact/ContactSocial";
 export const Footer = () => {
     return (
         <footer className="mt-28 border-t-2 border-t-gray-400/20 text-base">
-            <div className="max-w-screen-xl mx-auto pt-28 p-4 flex justify-between">
+            <div className="max-w-screen-xl mx-auto pt-28 p-4 flex gap-8 flex-col justify-start md:justify-between md:flex-row">
                 <div className="flex flex-col gap-8 items-start">
                     <div>
                         <Link href="/" title="Icono de Jeremy Díaz" removeSpacing>
@@ -22,7 +22,7 @@ export const Footer = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex flex-col gap-8 items-end">
+                <div className="flex flex-col gap-8 md:items-end">
                     <div>
                         <ContactSocial />
                     </div>

@@ -7,9 +7,11 @@ export const Header = () => {
     return (
         <header className="fixed z-20 w-full backdrop-blur-md">
             <div className="max-w-screen-xl mx-auto p-4 flex items-center justify-between">
-                <Link href="/" title="Icono de Jeremy Díaz" removeSpacing>
-                    <FavIcon />
-                </Link>
+                <div className="relative z-30">
+                    <Link href="/" title="Icono de Jeremy Díaz" removeSpacing>
+                        <FavIcon />
+                    </Link>
+                </div>
                 <Nav />
             </div>
         </header>

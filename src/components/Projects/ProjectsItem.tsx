@@ -14,14 +14,14 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({ project, isPictureRi
     const { title, picture, href, repository, description, skills } = project;
     const subtitleClass = SUBTITLE_CLASS;
 
-    const orderPicture = isPictureRightOrder ? "order-2" : "order-0";
+    const orderPictureClass = isPictureRightOrder ? "w-full sm:w-auto sm:order-2" : "w-full sm:w-auto sm:order-0";
 
     return (
-        <article className="flex items-center justify-between">
-            <div className="flex flex-col gap-8 order-1">
-                <header className="flex items-end gap-8">
+        <article className="flex flex-col gap-8 items-center justify-between sm:flex-row">
+            <div className="flex gap-8 order-1 flex-col w-full sm:w-auto">
+                <header className="flex flex-col items-start gap-8 xl:flex-row xl:items-end">
                     <h3 className={subtitleClass}>{title}</h3>
-                    <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-2">
                         <Link href={href} title={`Visita ${title}`} target="_blank" isActive>
                             <>
                                 <ExternalLinkIcon />
@@ -48,9 +48,9 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({ project, isPictureRi
                     </ul>
                 </div>
             </div>
-            <aside className={orderPicture}>
+            <aside className={orderPictureClass}>
                 <picture>
-                    <img className="aspect-video rounded-md object-cover max-w-md" src={picture} alt={`Imagen del proyecto de ${title}`} loading="lazy" decoding="async" />
+                    <img className="aspect-video rounded-md object-cover w-full sm:max-w-md" src={picture} alt={`Imagen del proyecto de ${title}`} loading="lazy" decoding="async" />
                 </picture>
             </aside>
         </article>
