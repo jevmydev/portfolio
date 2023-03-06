@@ -23,6 +23,15 @@ export const ExternalLinkIcon = ({ width = "w-7", height = "h-7", stroke = "stro
     );
 };
 
+export const CircleIcon = ({ width = "w-7", height = "h-7", fill = "fill-current", stroke = "stroke-current" }) => {
+    return (
+        <svg className={`${width} ${height} ${fill} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+        </svg>
+    );
+};
+
 export const GithubIcon = ({ width = "w-7", height = "h-7", fill = "fill-current" }) => {
     return (
         <svg className={`${width} ${height} ${fill}`} viewBox="0 0 24 24" stroke="none" fill="none">
