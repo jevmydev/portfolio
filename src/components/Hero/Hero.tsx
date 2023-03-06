@@ -1,5 +1,5 @@
-import { ArrowDownIcon, GithubIcon, LinkedInIcon } from "../../elements/Icons";
 import { SUBTITLE_CLASS, TITLE_CLASS } from "../../constants/stylesClass";
+import { ArrowDownIcon, GithubIcon, LinkedInIcon } from "../../elements/Icons";
 
 import Link from "../../elements/Link";
 

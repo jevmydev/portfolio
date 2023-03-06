@@ -1,4 +1,4 @@
-import { SkillsTypes } from "../../types";
+import { type SkillsTypes } from "../../types";
 
 interface SkillsSliderItemProps {
     skill: SkillsTypes;

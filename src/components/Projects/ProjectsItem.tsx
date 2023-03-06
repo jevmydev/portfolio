@@ -1,9 +1,9 @@
 import { SUBTITLE_CLASS } from "../../constants/stylesClass";
+import { ExternalLinkIcon, GithubIcon } from "../../elements/Icons";
 import { type SkillsTypes, type ProjectsTypes } from "../../types";
 
-import Link from "../../elements/Link";
 import SkillsSliderItem from "../Skills/SkillsSliderItem";
-import { ExternalLinkIcon, GithubIcon } from "../../elements/Icons";
+import Link from "../../elements/Link";
 
 interface ProjectsItemProps {
     project: ProjectsTypes;

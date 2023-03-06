@@ -1,4 +1,4 @@
-import { LinkTypes } from "../../types";
+import { type LinkTypes } from "../../types";
 
 import Link from "../../elements/Link";
 

@@ -1,5 +1,5 @@
 import { SLIDER_SHADOW } from "../../constants/stylesClass";
-import { SkillsTypes } from "../../types";
+import { type SkillsTypes } from "../../types";
 import { skills } from "../../mocks/skills";
 
 import SkillsSliderItem from "./SkillsSliderItem";

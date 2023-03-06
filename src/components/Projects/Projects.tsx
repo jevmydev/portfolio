@@ -1,6 +1,6 @@
 import { SUBTITLE_CLASS } from "../../constants/stylesClass";
+import { type ProjectsTypes } from "../../types";
 import { projects } from "../../mocks/projects";
-import { ProjectsTypes } from "../../types";
 
 import ProjectsItem from "./ProjectsItem";
 

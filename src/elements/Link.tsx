@@ -1,5 +1,5 @@
 import { INTERACTIVE_CLASS, INTERACTIVE_ACTIVE_CLASS } from "../constants/stylesClass";
-import { LinkTypesProps } from "../types";
+import { type LinkTypesProps } from "../types";
 
 export const Link: React.FC<LinkTypesProps> = ({ href, title, target, removeSpacing, isActive, children }) => {
     const activeClass = isActive ? INTERACTIVE_ACTIVE_CLASS : "";

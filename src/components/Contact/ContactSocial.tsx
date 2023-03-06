@@ -1,4 +1,4 @@
-import { SocialLinkTypes } from "../../types";
+import { type SocialLinkTypes } from "../../types";
 import { socialLinks } from "../../mocks/socialLinks";
 
 import Link from "../../elements/Link";

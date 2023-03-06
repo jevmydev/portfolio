@@ -1,5 +1,5 @@
 import { ConfigIcon } from "../../elements/Icons";
-import { LinkTypes } from "../../types";
+import { type LinkTypes } from "../../types";
 import { navLinks } from "../../mocks/navLinks";
 
 import NavLink from "./NavLink";
