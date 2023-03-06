@@ -12,9 +12,9 @@ export const Projects = () => {
             <div className="max-w-screen-xl mx-auto pt-28 p-4">
                 <h2 className={subtitleClass}>Proyectos</h2>
                 <div className="flex flex-col gap-28 pt-28">
-                    {projects.map((project: ProjectsTypes, index) => {
+                    {projects.map((project: ProjectsTypes) => {
                         const { id } = project;
-                        const isPictureRightOrder = index % 2 === 0;
+                        const isPictureRightOrder = true; // index % 2 === 0 --> right then left picture
 
                         return <ProjectsItem key={id} project={project} isPictureRightOrder={isPictureRightOrder} />;
                     })}
