@@ -13,21 +13,21 @@ export const socialLinks = [
         id: uuid(),
         href: "https://www.linkedin.com/in/jevmydev",
         title: "LinkedIn",
-        isActive: true,
+        isActive: false,
         Icon: LinkedInIcon
     },
     {
         id: uuid(),
         href: "https://www.instagram.com/jevmydev/",
         title: "Instagram",
-        isActive: true,
+        isActive: false,
         Icon: InstagramIcon
     },
     {
         id: uuid(),
         href: "https://twitter.com/jevmydev",
         title: "Twitter",
-        isActive: true,
+        isActive: false,
         Icon: TwitterIcon
     }
 ] as const;
