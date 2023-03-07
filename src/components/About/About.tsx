@@ -7,7 +7,7 @@ export const About = () => {
         <section id="about">
             <div className="max-w-screen-xl mx-auto pt-28 p-4">
                 <h2 className={subtitleClass}>Sobre mí</h2>
-                <div className="pt-28 flex gap-8 flex-col justify-start items-start sm:items-center sm:justify-between sm:flex-row">
+                <div className="pt-20 flex gap-8 flex-col justify-start items-start sm:items-center sm:justify-between sm:flex-row">
                     <div className="max-w-xl flex flex-col gap-2">
                         <p>
                             Comencé mi aprendizaje de <strong className="text-gray-200">forma autodidacta</strong> utilizando diversos recursos como tutoriales, directos, blogs, lecturas y proyectos
