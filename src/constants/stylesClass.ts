@@ -5,7 +5,7 @@ export const GRADIENT_CLASS = "text-transparent bg-clip-text bg-gradient-to-r fr
 
 export const TITLE_CLASS = `font-bold text-gray-200 text-center ${GRADIENT_CLASS} text-7xl sm:text-8xl xl:text-9xl`;
 export const SUBTITLE_CLASS = "font-bold text-gray-200 text-center text-3xl sm:text-4xl xl:text-6xl";
-export const SUBTITLE_COLOR_CLASS = `${SUBTITLE_CLASS} ${GRADIENT_CLASS}`;
+export const SUBTITLE_COLOR_CLASS = `${SUBTITLE_CLASS} ${GRADIENT_CLASS} text-5xl sm:text-9xl xl:text-9xl flex`;
 
 export const INPUT_CLASS = "w-full outline-none py-2 px-4 bg-transparent text-gray-200 border-2 border-gray-400/20 rounded-md transition-colors focus:bg-gray-400/20";
 
