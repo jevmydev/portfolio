@@ -22,6 +22,7 @@ export interface LinkTypesProps {
     removeSpacing?: boolean;
     isActive?: boolean;
     children: JSX.Element | string;
+    onClick?: () => void;
 }
 
 export interface SocialLinkTypes extends LinkTypes {
