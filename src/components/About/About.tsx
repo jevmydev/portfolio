@@ -21,7 +21,7 @@ export const About = () => {
                         </p>
                     </div>
                     <div className="flex justify-end items-center -order-1 sm:order-1">
-                        <span className="text-6xl lg:text-9xl">👋❤️</span>
+                        <span className="text-9xl">❤️</span>
                     </div>
                 </div>
             </div>

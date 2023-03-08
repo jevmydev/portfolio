@@ -15,7 +15,9 @@ export const Hero = () => {
                     <h2 className={subtitleClass}>Frontend Developer</h2>
                 </div>
                 <div className="max-w-md">
-                    <p>Llevo más de dos años desarrollando experiencias de usuario atractivas y funcionales.</p>
+                    <p>
+                        Llevo más de dos años desarrollando experiencias de usuario atractivas y funcionales. <span className="animate-greeting inline-block">👋</span>
+                    </p>
                 </div>
                 <div className="flex gap-2">
                     <Link href="https://github.com/jevmydev" title="Github" target="_blank" isActive>
