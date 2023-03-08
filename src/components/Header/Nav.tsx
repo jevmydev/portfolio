@@ -9,6 +9,7 @@ export const Nav = () => {
 
     const isMenuOpenNavClass = isMenuOpen ? "top-0" : "";
     const isMenuOpenBodyClass = ["overflow-hidden", "sm:overflow-auto"];
+    const menuOpenTitle = isMenuOpen ? "Cerrar menú" : "Abrir menú";
 
     const updateMenu = () => {
         const newIsMenuOpen = !isMenuOpen;
@@ -32,7 +33,7 @@ export const Nav = () => {
                         </Button>
                     </li>
                     <li className="sm:hidden">
-                        <Button title="Abrir menú" onClick={updateMenu}>
+                        <Button title={menuOpenTitle} onClick={updateMenu}>
                             <MenuIcon />
                         </Button>
                     </li>
