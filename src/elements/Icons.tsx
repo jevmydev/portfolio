@@ -23,11 +23,14 @@ export const ExternalLinkIcon = ({ width = "w-7", height = "h-7", stroke = "stro
     );
 };
 
-export const MenuIcon = ({ width = "w-7", height = "h-7", fill = "fill-current" }) => {
+export const MenuIcon = ({ width = "w-7", height = "h-7", fill = "fill-current", isChange = false }) => {
+    const isMenuOpenRectTopClass = isChange ? "menu-top" : "";
+    const isMenuOpenRectBottomClass = isChange ? "menu-bottom" : "";
+
     return (
         <svg className={`${width} ${height} ${fill}`} viewBox="0 0 80 40">
-            <rect fill="currentColor" width="90" height="10"></rect>
-            <rect fill="currentColor" y="30" width="90" height="10"></rect>
+            <rect className={`transition-transform ${isMenuOpenRectTopClass}`} width="90" height="10" />
+            <rect className={`transition-transform ${isMenuOpenRectBottomClass}`} width="90" height="10" y="30" />
         </svg>
     );
 };

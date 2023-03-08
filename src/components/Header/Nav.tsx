@@ -34,7 +34,7 @@ export const Nav = () => {
                     </li>
                     <li className="sm:hidden">
                         <Button title={menuOpenTitle} onClick={updateMenu}>
-                            <MenuIcon />
+                            <MenuIcon isChange={isMenuOpen} />
                         </Button>
                     </li>
                 </ul>
