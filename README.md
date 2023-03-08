@@ -15,7 +15,7 @@ Mi perfil profesional con más de **dos años desarrollando** experiencias de us
   <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Icono de Netlify">
 </p>
 
-![Hero del portfolio de Jeremy Díaz](./public/assets/readme/hero.png)
+![Hero del portfolio de Jeremy Díaz](./public/assets/readme/hero.webp)
 
 # ¿Quieres saber más de mí?
 
