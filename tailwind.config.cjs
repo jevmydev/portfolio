@@ -21,7 +21,8 @@ module.exports = {
         },
         animation: {
             slider: "slider 20s linear alternate infinite",
-            arrow: "arrow 1.5s ease-in-out infinite"
+            arrow: "arrow 1.5s ease-in-out infinite",
+            greeting: "greeting 2s linear infinite alternate"
         },
         keyframes: {
             slider: {
@@ -43,6 +44,23 @@ module.exports = {
                 to: {
                     transform: "translateY(.2rem)",
                     opacity: "0"
+                }
+            },
+            greeting: {
+                "10%": {
+                    transform: "rotate(-10deg)"
+                },
+                "20%": {
+                    transform: "rotate(10deg)"
+                },
+                "30%": {
+                    transform: "rotate(-10deg)"
+                },
+                "40%": {
+                    transform: "rotate(10deg)"
+                },
+                "50%": {
+                    transform: "rotate(-10deg)"
                 }
             }
         }
