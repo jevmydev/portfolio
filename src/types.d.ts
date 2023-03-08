@@ -47,3 +47,23 @@ export interface ButtonTypesProps {
     children: JSX.Element | string;
     onClick?: () => void;
 }
+
+export interface FormDataTypes {
+    email: string;
+    message: string;
+}
+
+export interface FormSpreeTypes {
+    formData: FormData;
+}
+
+export interface FormSpreeOptions {
+    method: string;
+    body: BodyInit<object> | null | undefined;
+    headers: HeadersInit;
+}
+
+export interface FormStatusTypes {
+    message: string;
+    isError: boolean;
+}
