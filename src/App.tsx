@@ -13,7 +13,7 @@ import Blur from "./elements/Blur";
 const App = () => {
     useEffect(() => {
         const clickSoundEvent = () => {
-            const audio = new Audio("../public/assets/sounds/click.mp3");
+            const audio = new Audio("/assets/sounds/click.mp3");
             audio.volume = 0.09;
             audio.play();
         };
