@@ -12,11 +12,10 @@ import Blur from "./elements/Blur";
 
 const App = () => {
     useEffect(() => {
-        const clickSoundEvent = () => {
-            const audio = new Audio("/assets/sounds/click.mp3");
-            audio.volume = 0.09;
-            audio.play();
-        };
+        const audio = new Audio("/assets/sounds/click.mp3");
+        audio.volume = 0.09;
+
+        const clickSoundEvent = () => audio.play();
 
         window.addEventListener("click", clickSoundEvent);
         return () => window.removeEventListener("click", clickSoundEvent);
