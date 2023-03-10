@@ -67,3 +67,9 @@ export interface FormStatusTypes {
     message: string;
     isError: boolean;
 }
+
+export interface PreferenceTypes {
+    animation: boolean;
+    sound: boolean;
+    scheme: string;
+}
