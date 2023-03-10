@@ -35,6 +35,48 @@ export const MenuIcon = ({ width = "w-7", height = "h-7", fill = "fill-current",
     );
 };
 
+export const AnimationIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+    return (
+        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+            <path d="M0 0h24v24H0z" stroke="none" fill="none" />
+            <line x1="15" y1="8" x2="15.01" y2="8" />
+            <rect x="4" y="4" width="16" height="16" rx="3" />
+            <path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" />
+            <path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
+        </svg>
+    );
+};
+
+export const SoundIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+    return (
+        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M15 8a5 5 0 0 1 0 8" />
+            <path d="M17.7 5a9 9 0 0 1 0 14" />
+            <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+        </svg>
+    );
+};
+
+export const SunIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+    return (
+        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="4" />
+            <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+        </svg>
+    );
+};
+
+export const MoonIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+    return (
+        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+        </svg>
+    );
+};
+
 export const CircleIcon = ({ width = "w-7", height = "h-7", fill = "fill-current", stroke = "stroke-current" }) => {
     return (
         <svg className={`${width} ${height} ${fill} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
