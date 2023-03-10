@@ -11,5 +11,7 @@ export const INPUT_CLASS = "w-full outline-none py-2 px-4 bg-transparent text-gr
 
 export const SUBMIT_INPUT_CLASS = `${INTERACTIVE_CLASS} ${INTERACTIVE_ACTIVE_CLASS} py-2 px-4 cursor-pointer` as const;
 
-export const SLIDER_SHADOW =
+export const SLIDER_SHADOW_CLASS =
     "before:bg-gradient-to-r before:from-semi-dark before:to-transparent before:absolute before:z-10 before:w-24 before:h-full before:left-0 before:top-0 after:bg-gradient-to-l after:from-semi-dark after:to-transparent after:absolute after:z-10 after:w-24 after:h-full after:right-0 after:top-0" as const;
+
+export const MENU_OPEN_BODY_CLASS = ["overflow-hidden", "sm:overflow-auto"] as const;

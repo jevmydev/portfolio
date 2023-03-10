@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { isMenuOpenBodyClass } from "../constants/stylesClass";
+import { MENU_OPEN_BODY_CLASS } from "../constants/stylesClass";
 
 export const useMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,8 +7,8 @@ export const useMenu = () => {
     const updateMenu = () => {
         const newIsMenuOpen = !isMenuOpen;
 
-        if (newIsMenuOpen) document.body.classList.add(...isMenuOpenBodyClass);
-        else document.body.classList.remove(...isMenuOpenBodyClass);
+        if (newIsMenuOpen) document.body.classList.add(...MENU_OPEN_BODY_CLASS);
+        else document.body.classList.remove(...MENU_OPEN_BODY_CLASS);
 
         setIsMenuOpen(newIsMenuOpen);
     };
