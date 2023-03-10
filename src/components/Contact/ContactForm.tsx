@@ -1,13 +1,9 @@
-import { useId } from "react";
 import { INPUT_CLASS, SUBMIT_INPUT_CLASS } from "../../constants/stylesClass";
 import { useContactForm } from "../../hooks/useContactForm";
 
 export const ContactForm = () => {
     const { status, clearStatus, postFormReq } = useContactForm();
     const { message, isError } = status;
-
-    const nameInputId = useId();
-    const messageInputId = useId();
 
     const inputClass = INPUT_CLASS;
     const submitInputClass = SUBMIT_INPUT_CLASS;
@@ -26,13 +22,13 @@ export const ContactForm = () => {
 
     return (
         <form className="flex flex-col gap-4 w-full" method="POST" onSubmit={handleSubmit}>
-            <label className="flex flex-col gap-2" htmlFor={nameInputId}>
+            <label className="flex flex-col gap-2">
                 Email
-                <input className={inputClass} id={nameInputId} name="email" type="text" placeholder="example@example.com" onChange={handleChange} />
+                <input className={inputClass} name="email" type="text" placeholder="example@example.com" onChange={handleChange} />
             </label>
-            <label className="flex flex-col gap-2" htmlFor={messageInputId}>
+            <label className="flex flex-col gap-2">
                 Mensaje
-                <textarea className={inputClass} id={messageInputId} name="message" placeholder="Me gustó tu portfolio..." onChange={handleChange}></textarea>
+                <textarea className={inputClass} name="message" placeholder="Me gustó tu portfolio..." onChange={handleChange}></textarea>
             </label>
             <div className="h-20">
                 {message && <span className={`block mb-2 ${statusClass}`}>{message}</span>}
