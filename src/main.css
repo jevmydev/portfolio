@@ -14,4 +14,8 @@
     .scheme-dark {
         color-scheme: dark;
     }
+
+    .scheme-light {
+        color-scheme: light;
+    }
 }
