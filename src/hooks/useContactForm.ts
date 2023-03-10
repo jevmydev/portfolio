@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { type FormSpreeTypes, type FormDataTypes } from "../types";
 import { postFormSpree } from "../services/formSpree";
-import { FORM_STATUS } from "../constants/defaultsValues";
+import { DEFAULT_FORM_STATUS } from "../constants/defaultsValues";
 
 export const useContactForm = () => {
-    const [status, setStatus] = useState(FORM_STATUS);
+    const [status, setStatus] = useState(DEFAULT_FORM_STATUS);
 
-    const clearStatus = () => setStatus(FORM_STATUS);
+    const clearStatus = () => setStatus(DEFAULT_FORM_STATUS);
     const isValidData = ({ email, message }: FormDataTypes) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,4})+$/.test(email) && /[A-Z]/gi.test(message);
 
     const postFormReq = async ({ formData }: FormSpreeTypes) => {
