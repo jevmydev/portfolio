@@ -1,4 +1,4 @@
-export const FavIcon = ({ width = "w-12", height = "h-12" }) => {
+export const FavIcon = ({ width = "w-11", height = "h-11" }) => {
     return <img className={`${width} ${height} aspect-square rounded-md object-cover`} src="/favicon.webp" alt="Icono de Jeremy Díaz" loading="lazy" decoding="async" />;
 };
 
