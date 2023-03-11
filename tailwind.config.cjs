@@ -8,7 +8,8 @@ module.exports = {
                 system: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif'
             },
             backgroundColor: {
-                "semi-dark": "rgb(10 12 14)"
+                "semi-dark": "rgb(10 12 14)",
+                "semi-white": "rgb(245 247 249)"
             },
             textColor: {
                 "primary-blue": "rgb(55 155 255)"
@@ -16,7 +17,8 @@ module.exports = {
             gradientColorStops: {
                 "primary-purple": "rgb(121 40 202)",
                 "primary-pink": "rgb(255 0 128)",
-                "semi-dark": "rgb(10 12 14)"
+                "semi-dark": "rgb(10 12 14)",
+                "semi-white": "rgb(245 247 249)"
             }
         },
         animation: {
