@@ -5,7 +5,7 @@ import { skills } from "../../mocks/skills";
 import SkillsSliderItem from "./SkillsSliderItem";
 
 export const SkillsSlider = () => {
-    const containerSliderClass = `max-w-screen-xl mx-auto pt-28 p-4 relative overflow-hidden ${SLIDER_SHADOW_CLASS}`;
+    const containerSliderClass = `${SLIDER_SHADOW_CLASS} max-w-screen-xl mx-auto pt-28 p-4 relative overflow-hidden`;
 
     return (
         <div>

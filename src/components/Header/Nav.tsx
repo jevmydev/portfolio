@@ -17,7 +17,7 @@ export const Nav = () => {
     return (
         <nav className="flex gap-2">
             <div
-                className={`flex items-center fixed z-20 p-4 ${isMenuOpenNavClass} left-0 w-full h-screen bg-semi-white dark:bg-semi-dark sm:p-0 sm:static sm:w-auto sm:h-auto sm:block sm:bg-transparent dark:sm:bg-transparent`}
+                className={`${isMenuOpenNavClass} flex items-center fixed z-20 p-4 left-0 w-full h-screen bg-semi-white dark:bg-semi-dark sm:p-0 sm:static sm:w-auto sm:h-auto sm:block sm:bg-transparent dark:sm:bg-transparent`}
             >
                 <NavItems updateMenu={updateMenu} />
             </div>
@@ -34,7 +34,7 @@ export const Nav = () => {
                         </Button>
                     </li>
                 </ul>
-                <div className={`absolute ${isPreferenceOpenClass} -z-10 mt-2 p-4 right-0 border-2 border-gray-400/20 bg-semi-white dark:bg-semi-dark rounded-md`}>
+                <div className={`${isPreferenceOpenClass} absolute -z-10 mt-2 p-4 right-0 border-2 border-gray-400/20 bg-semi-white dark:bg-semi-dark rounded-md`}>
                     <Preference />
                 </div>
             </div>
