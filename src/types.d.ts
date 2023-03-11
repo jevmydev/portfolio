@@ -69,7 +69,6 @@ export interface FormStatusTypes {
 }
 
 export interface PreferenceTypes {
-    animation: boolean;
     sound: boolean;
     scheme: string;
 }
