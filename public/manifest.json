@@ -19,6 +19,10 @@
         }
     ],
     "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "rgb(229 231 235)",
+    "background_color": "rgb(10 12 14)",
+    "id": "/index.html",
     "start_url": "/index.html",
     "homepage": "https://jeremydiaz.netlify.app/"
 }
