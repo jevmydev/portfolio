@@ -47,6 +47,19 @@ export const AnimationIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-
     );
 };
 
+export const AnimationOffIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+    return (
+        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="3" y1="3" x2="21" y2="21" />
+            <line x1="15" y1="8" x2="15.01" y2="8" />
+            <path d="M19.121 19.122a3 3 0 0 1 -2.121 .878h-10a3 3 0 0 1 -3 -3v-10c0 -.833 .34 -1.587 .888 -2.131m3.112 -.869h9a3 3 0 0 1 3 3v9" />
+            <path d="M4 15l4 -4c.928 -.893 2.072 -.893 3 0l5 5" />
+            <path d="M16.32 12.34c.577 -.059 1.162 .162 1.68 .66l2 2" />
+        </svg>
+    );
+};
+
 export const SoundIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
     return (
         <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
@@ -54,6 +67,16 @@ export const SoundIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-curr
             <path d="M15 8a5 5 0 0 1 0 8" />
             <path d="M17.7 5a9 9 0 0 1 0 14" />
             <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+        </svg>
+    );
+};
+
+export const MuteIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+    return (
+        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+            <path d="M16 10l4 4m0 -4l-4 4" />
         </svg>
     );
 };
