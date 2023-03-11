@@ -7,7 +7,7 @@ export const ContactForm = () => {
 
     const inputClass = INPUT_CLASS;
     const submitInputClass = SUBMIT_INPUT_CLASS;
-    const statusClass = isError ? "text-red-400" : "text-green-400";
+    const statusClass = isError ? "text-red-800 dark:text-red-400" : "text-green-800 dark:text-green-400";
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -31,7 +31,7 @@ export const ContactForm = () => {
                 <textarea className={inputClass} name="message" placeholder="Me gustó tu portfolio..." onChange={handleChange}></textarea>
             </label>
             <div className="h-20">
-                {message && <span className={`block mb-2 ${statusClass}`}>{message}</span>}
+                {message && <span className={`${statusClass} block mb-2`}>{message}</span>}
                 <input className={submitInputClass} type="submit" />
             </div>
         </form>
