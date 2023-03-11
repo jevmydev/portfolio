@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
@@ -11,16 +10,6 @@ import ProjectsMore from "./components/Projects/ProjectsMore";
 import Blur from "./elements/Blur";
 
 const App = () => {
-    useEffect(() => {
-        const audio = new Audio("/assets/sounds/click.mp3");
-        audio.volume = 0.09;
-
-        const clickSoundEvent = () => audio.play();
-
-        window.addEventListener("click", clickSoundEvent);
-        return () => window.removeEventListener("click", clickSoundEvent);
-    }, []);
-
     return (
         <>
             <Blur isFullScreen />
