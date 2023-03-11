@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { DEFAULT_PREFERENCE } from "../constants/defaultsValues";
+import { DEFAULT_PREFERENCE } from "../constants/defaultValues";
 import { getStorage, setStorage } from "../storage/local";
 import { type PreferenceTypes } from "../types";
 
