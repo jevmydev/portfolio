@@ -19,8 +19,8 @@ export const Footer = () => {
                     <div>
                         <span className="flex items-center gap-2">
                             Estado
-                            <CircleIcon width="w-2" fill="fill-green-400" stroke="stroke-green-400" />
-                            <span className="text-green-400">Normal</span>
+                            <CircleIcon width="w-2" fill="fill-green-800 dark:fill-green-400" stroke="stroke-green-400" />
+                            <span className="text-green-800 dark:text-green-400">Normal</span>
                         </span>
                     </div>
                 </div>
