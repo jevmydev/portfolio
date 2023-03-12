@@ -1,29 +1,19 @@
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Projects from "./components/Projects/Projects";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import { lazy, Suspense } from "react";
+import { Switch, Route } from "wouter";
 
-import SkillsSlider from "./components/Skills/SkillsSlider";
-import ProjectsMore from "./components/Projects/ProjectsMore";
-import Blur from "./elements/Blur";
+const HomePage = lazy(() => import("./pages/HomePage"));
+const SocialPage = lazy(() => import("./pages/SocialPage"));
+const Page404 = lazy(() => import("./pages/Page404"));
 
 const App = () => {
     return (
-        <>
-            <Blur isFullScreen />
-            <Header />
-            <main>
-                <Hero />
-                <SkillsSlider />
-                <Projects />
-                <ProjectsMore />
-                <About />
-                <Contact />
-            </main>
-            <Footer />
-        </>
+        <Suspense>
+            <Switch>
+                <Route path="/" component={HomePage} />
+                <Route path="/social" component={SocialPage} />
+                <Route component={Page404} />
+            </Switch>
+        </Suspense>
     );
 };
 
