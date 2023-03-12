@@ -29,7 +29,7 @@ Mi perfil profesional con más de **dos años desarrollando** experiencias de us
 -   Puedes utilizar el producto realizando un `git clone https://github.com/jevmydev/portfolio` en tu terminal.
 -   Luego emplear `npm run dev` en tu terminal para desplegar un entorno de desarrollo en la web.
 
-**Opcional para formulario**
+Opcional para formulario:
 
 -   Crear el archivo `.env.local` en la raíz.
 -   Después, crear la key: `VITE_FORMSPREE_URL` (Revisa `https://help.formspree.io/hc/en-us/articles/360015231893-API-Keys`).
