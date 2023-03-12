@@ -69,12 +69,14 @@ export interface FormStatusTypes {
 }
 
 export interface PreferenceTypes {
-    preference: PreferenceStateTypes;
-    updateSchemePreference: () => void;
-    updateSoundPreference: () => void;
-}
-
-export interface PreferenceStateTypes {
     sound: boolean;
     scheme: string;
+}
+
+export interface PreferenceAllTypes {
+    preference: PreferenceTypes;
+    isPreferenceOpen: boolean;
+    updatePreference: () => void;
+    updateSchemePreference: () => void;
+    updateSoundPreference: () => void;
 }
