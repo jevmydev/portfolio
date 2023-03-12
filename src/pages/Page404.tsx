@@ -1,5 +1,6 @@
 import { TITLE_CLASS } from "../constants/stylesClass";
-import { Link } from "../elements/Link";
+
+import Link from "../elements/Link";
 
 export const Page404 = () => {
     const titleClass = `${TITLE_CLASS} flex`;
