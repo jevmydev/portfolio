@@ -1,9 +1,10 @@
 import { MoonIcon, MuteIcon, SoundIcon, SunIcon } from "../../elements/Icons";
-import { type PreferenceTypes } from "../../types";
+import { usePreference } from "../../hooks/usePreference";
 
 import Button from "../../elements/Button";
 
-export const Preference = ({ preference, updateSchemePreference, updateSoundPreference }: PreferenceTypes) => {
+export const Preference = () => {
+    const { preference, updateSchemePreference, updateSoundPreference } = usePreference();
     const { sound, scheme } = preference;
 
     const isSchemeDark = scheme === "dark";

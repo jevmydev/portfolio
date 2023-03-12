@@ -8,7 +8,7 @@ import Preference from "./Preference";
 
 export const Nav = () => {
     const { isMenuOpen, updateMenu } = useMenu();
-    const { preference, isPreferenceOpen, updateSchemePreference, updateSoundPreference, updatePreference } = usePreference();
+    const { isPreferenceOpen, updatePreference } = usePreference();
 
     const isPreferenceOpenClass = isPreferenceOpen ? "top-12" : "-top-[200vh]";
     const isMenuOpenNavClass = isMenuOpen ? "top-0" : "-top-[200vh]";
@@ -34,8 +34,10 @@ export const Nav = () => {
                         </Button>
                     </li>
                 </ul>
-                <div className={`${isPreferenceOpenClass} absolute -z-10 mt-2 p-4 right-0 border-2 border-gray-400/20 bg-semi-white dark:bg-semi-dark rounded-md`}>
-                    <Preference preference={preference} updateSchemePreference={updateSchemePreference} updateSoundPreference={updateSoundPreference} />
+                <div
+                    className={`${isPreferenceOpenClass} absolute -z-10 mt-2 p-4 right-0 border-2 border-gray-400/20 bg-semi-white dark:bg-semi-dark rounded-md`}
+                >
+                    <Preference />
                 </div>
             </div>
         </nav>
