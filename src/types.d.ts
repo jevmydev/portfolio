@@ -69,6 +69,12 @@ export interface FormStatusTypes {
 }
 
 export interface PreferenceTypes {
+    preference: PreferenceStateTypes;
+    updateSchemePreference: () => void;
+    updateSoundPreference: () => void;
+}
+
+export interface PreferenceStateTypes {
     sound: boolean;
     scheme: string;
 }
