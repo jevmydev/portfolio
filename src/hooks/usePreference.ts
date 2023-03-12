@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { DEFAULT_PREFERENCE } from "../constants/defaultValues";
 import { getStorage, setStorage } from "../storage/local";
-import { type PreferenceTypes } from "../types";
+import { type PreferenceStateTypes } from "../types";
 
 export const usePreference = () => {
     const [isPreferenceOpen, setIsPreferenceOpen] = useState(false);
@@ -21,7 +21,7 @@ export const usePreference = () => {
     const updatePreference = () => setIsPreferenceOpen(!isPreferenceOpen);
 
     const updateSoundPreference = () =>
-        setPreference((prevState: PreferenceTypes) => ({
+        setPreference((prevState: PreferenceStateTypes) => ({
             ...prevState,
             sound: !preference.sound
         }));
@@ -32,16 +32,20 @@ export const usePreference = () => {
         document.documentElement.classList.toggle("dark", !isDarkScheme);
         document.documentElement.classList.toggle("scheme-dark", !isDarkScheme);
 
-        setPreference((prevState: PreferenceTypes) => ({
+        setPreference((prevState: PreferenceStateTypes) => ({
             ...prevState,
             scheme: isDarkScheme ? "light" : "dark"
         }));
     };
 
-    useEffect(() => {
+    const sound = useMemo(() => {
         const sound = new Audio("/assets/sounds/click.mp3");
         sound.volume = 0.09;
 
+        return sound;
+    }, []);
+
+    useEffect(() => {
         const clickSoundEvent = () => sound.play();
 
         if (preference.sound) window.addEventListener("click", clickSoundEvent);
