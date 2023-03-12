@@ -1,5 +1,5 @@
 export const INTERACTIVE_CLASS = "flex gap-2 items-center justify-start transition-colors rounded-md hover:text-gray-800 hover:bg-gray-400/20 dark:hover:text-gray-200" as const;
-export const INTERACTIVE_ACTIVE_CLASS = "text-primary-blue filter saturate-200 backdrop-blur-md bg-gray-800 hover:bg-gray-400/20" as const;
+export const INTERACTIVE_ACTIVE_CLASS = "text-primary-blue filter saturate-200 bg-gray-800 hover:bg-gray-400/20" as const;
 
 export const GRADIENT_CLASS = "text-transparent bg-clip-text bg-gradient-to-r from-primary-purple to-primary-pink" as const;
 
