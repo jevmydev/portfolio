@@ -31,8 +31,8 @@ Mi perfil profesional con más de **dos años desarrollando** experiencias de us
 
 Opcional para formulario:
 
--   Crear el archivo `.env.local` en la raíz.
--   Después, crear la key: `VITE_FORMSPREE_URL` (Revisa `https://help.formspree.io/hc/en-us/articles/360015231893-API-Keys`).
+-   Crear el archivo `.env.local` en la raíz del proyecto.
+-   Después, crear el endpoint del formulario: `VITE_FORMSPREE_URL` (Revisa `https://formspree.io/`).
 
 También dispones de:
 
