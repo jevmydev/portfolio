@@ -15,13 +15,19 @@
         {
             "src": "/favicon.webp",
             "sizes": "200x200",
-            "type": "image/webp"
+            "type": "image/webp",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ],
     "display": "standalone",
     "orientation": "portrait-primary",
-    "theme_color": "rgb(229 231 235)",
-    "background_color": "rgb(10 12 14)",
+    "theme_color": "#e5e7eb",
+    "background_color": "#0a0c0e",
     "id": "/index.html",
     "start_url": "/index.html",
     "homepage": "https://jeremydiaz.netlify.app/"
