@@ -12,8 +12,8 @@ interface ProjectsItemProps {
 
 export const ProjectsItem: React.FC<ProjectsItemProps> = ({ project, isPictureRightOrder }) => {
     const { title, picture, href, repository, description, skills } = project;
-    const subtitleClass = SUBTITLE_CLASS;
 
+    const subtitleClass = SUBTITLE_CLASS;
     const orderPictureClass = isPictureRightOrder ? "w-full sm:w-auto sm:order-2" : "w-full sm:w-auto sm:order-0";
 
     return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { DEFAULT_FORM_STATUS } from "../constants/defaultValues";
 import { type FormSpreeTypes, type FormDataTypes } from "../types";
 import { postFormSpree } from "../services/formSpree";
-import { DEFAULT_FORM_STATUS } from "../constants/defaultValues";
 
 export const useContactForm = () => {
     const [status, setStatus] = useState(DEFAULT_FORM_STATUS);

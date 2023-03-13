@@ -19,7 +19,6 @@ export const Projects = () => {
 
                         return <ProjectsItem key={id} project={project} isPictureRightOrder={isPictureRightOrder} />;
                     })}
-
                     <ProjectsMore />
                 </div>
             </div>
