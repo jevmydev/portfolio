@@ -9,7 +9,7 @@ export const Hero = () => {
 
     return (
         <section id="hero">
-            <div className="max-w-screen-xl mx-auto pt-20 p-4 h-screen flex flex-col gap-8 justify-center items-center text-center">
+            <div className="animate-fadeIn max-w-screen-xl mx-auto pt-20 p-4 h-screen flex flex-col gap-8 justify-center items-center text-center">
                 <div className="flex flex-col gap-2">
                     <h1 className={titleClass}>Jeremy Díaz</h1>
                     <h2 className={subtitleClass}>Frontend Developer</h2>

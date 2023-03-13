@@ -24,7 +24,8 @@ module.exports = {
         animation: {
             slider: "slider 20s linear alternate infinite",
             arrow: "arrow 1.5s ease-in-out infinite",
-            greeting: "greeting 2s linear infinite alternate"
+            greeting: "greeting 2s linear infinite alternate",
+            fadeIn: "fadeIn 1s ease"
         },
         keyframes: {
             slider: {
@@ -63,6 +64,16 @@ module.exports = {
                 },
                 "50%": {
                     transform: "rotate(-10deg)"
+                }
+            },
+            fadeIn: {
+                "0%": {
+                    opacity: "0",
+                    transform: "translate3d(0, 1rem, 0)"
+                },
+                "100%": {
+                    opacity: "1",
+                    transform: "translate3d(0, 0, 0)"
                 }
             }
         }
