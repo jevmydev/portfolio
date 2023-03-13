@@ -50,7 +50,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({ project, isPictureRi
             </div>
             <aside className={orderPictureClass}>
                 <picture>
-                    <img className="aspect-video rounded-md object-cover w-full sm:max-w-md" src={picture} alt={`Imagen del proyecto de ${title}`} loading="lazy" decoding="async" />
+                    <img className="aspect-video rounded object-cover w-full sm:max-w-md" src={picture} alt={`Imagen del proyecto de ${title}`} loading="lazy" decoding="async" />
                 </picture>
             </aside>
         </article>

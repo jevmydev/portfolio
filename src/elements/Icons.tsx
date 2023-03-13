@@ -1,5 +1,5 @@
 export const FavIcon = ({ width = "w-11", height = "h-11" }) => {
-    return <img className={`${width} ${height} aspect-square rounded-md object-cover`} src="/favicon.webp" alt="Icono de Jeremy Díaz" loading="lazy" decoding="async" />;
+    return <img className={`${width} ${height} aspect-square rounded object-cover`} src="/favicon.webp" alt="Icono de Jeremy Díaz" loading="lazy" decoding="async" />;
 };
 
 export const ConfigIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {

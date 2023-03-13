@@ -34,9 +34,7 @@ export const Nav = () => {
                         </Button>
                     </li>
                 </ul>
-                <div
-                    className={`${isPreferenceOpenClass} absolute -z-10 mt-2 p-4 right-0 border-2 border-gray-400/20 bg-semi-white dark:bg-semi-dark rounded-md`}
-                >
+                <div className={`${isPreferenceOpenClass} absolute -z-10 mt-2 p-4 right-0 border-2 border-gray-400/20 bg-semi-white dark:bg-semi-dark rounded`}>
                     <Preference />
                 </div>
             </div>
