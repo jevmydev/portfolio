@@ -3,6 +3,7 @@ import { type ProjectsTypes } from "../../types";
 import { projects } from "../../mocks/projects";
 
 import ProjectsItem from "./ProjectsItem";
+import ProjectsMore from "./ProjectsMore";
 
 export const Projects = () => {
     const subtitleClass = SUBTITLE_COLOR_CLASS;
@@ -18,6 +19,8 @@ export const Projects = () => {
 
                         return <ProjectsItem key={id} project={project} isPictureRightOrder={isPictureRightOrder} />;
                     })}
+
+                    <ProjectsMore />
                 </div>
             </div>
         </section>
