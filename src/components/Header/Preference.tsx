@@ -21,7 +21,7 @@ export const Preference = () => {
                     <input type="checkbox" checked={sound} onChange={updateSoundPreference} />
                 </label>
             </div>
-            <div className="flex flex-col pt-2 gap-2 border-t-2 border-t-gray-400/20">
+            <div className="flex flex-col pt-2 gap-2 border-t-2 border-t-slate-400/20">
                 <Button title={isSchemeDarkTitle} onClick={updateSchemePreference}>
                     <>
                         {isSchemeDark ? <SunIcon /> : <MoonIcon />}

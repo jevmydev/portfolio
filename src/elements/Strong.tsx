@@ -3,7 +3,7 @@ interface StrongTypes {
 }
 
 export const Strong = ({ children }: StrongTypes) => {
-    return <strong className="text-gray-800 dark:text-gray-200">{children}</strong>;
+    return <strong className="text-slate-800 dark:text-slate-200">{children}</strong>;
 };
 
 export default Strong;

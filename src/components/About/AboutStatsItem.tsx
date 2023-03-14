@@ -4,10 +4,10 @@ interface AboutStatsItemProps {
 }
 
 export const AboutStatsItem = ({ stat, description }: AboutStatsItemProps) => {
-    const statClass = "text-5xl text-gray-800 dark:text-gray-200";
+    const statClass = "text-5xl text-slate-800 dark:text-slate-200";
 
     return (
-        <div className="flex flex-col gap-2 p-4 border-2 border-gray-400/20 rounded">
+        <div className="flex flex-col gap-2 p-4 border-2 border-slate-400/20 rounded">
             <span className={statClass}>{stat}</span>
             <span>{description}</span>
         </div>
