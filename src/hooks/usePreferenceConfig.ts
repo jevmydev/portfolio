@@ -29,12 +29,16 @@ export const usePreferenceConfig = () => {
     const updateSchemePreference = () => {
         const isDarkScheme = preference.scheme === "dark";
 
-        document.documentElement.classList.toggle("dark", !isDarkScheme);
-        document.documentElement.classList.toggle("scheme-dark", !isDarkScheme);
-
         setPreference((prevState: PreferenceTypes) => ({
             ...prevState,
             scheme: isDarkScheme ? "light" : "dark"
+        }));
+    };
+
+    const updateSystemScheme = () => {
+        setPreference((prevState: PreferenceTypes) => ({
+            ...prevState,
+            scheme: DEFAULT_PREFERENCE.scheme
         }));
     };
 
@@ -44,6 +48,14 @@ export const usePreferenceConfig = () => {
 
         return sound;
     }, []);
+
+    useEffect(() => {
+        const isDarkScheme = preference.scheme === "dark";
+        console.log(isDarkScheme);
+
+        document.documentElement.classList.toggle("dark", isDarkScheme);
+        document.documentElement.classList.toggle("scheme-dark", isDarkScheme);
+    }, [preference.scheme]);
 
     useEffect(() => {
         const clickSoundEvent = () => sound.play();
@@ -56,5 +68,5 @@ export const usePreferenceConfig = () => {
 
     useEffect(() => setStorage({ key: "preference", value: preference }), [preference]);
 
-    return { preference, isPreferenceOpen, updateSchemePreference, updateSoundPreference, updatePreference };
+    return { preference, isPreferenceOpen, updateSchemePreference, updateSoundPreference, updateSystemScheme, updatePreference };
 };

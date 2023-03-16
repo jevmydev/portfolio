@@ -1,10 +1,10 @@
-import { MoonIcon, MuteIcon, SoundIcon, SunIcon } from "../../elements/Icons";
+import { DeviceIcon, MoonIcon, MuteIcon, SoundIcon, SunIcon } from "../../elements/Icons";
 import { usePreference } from "../../hooks/usePreference";
 
 import Button from "../../elements/Button";
 
 export const Preference = () => {
-    const { preference, updateSchemePreference, updateSoundPreference } = usePreference();
+    const { preference, updateSchemePreference, updateSoundPreference, updateSystemScheme } = usePreference();
     const { sound, scheme } = preference;
 
     const isSchemeDark = scheme === "dark";
@@ -26,6 +26,12 @@ export const Preference = () => {
                     <>
                         {isSchemeDark ? <SunIcon /> : <MoonIcon />}
                         {isSchemeDarkTitle}
+                    </>
+                </Button>
+                <Button title="Preferencia" onClick={updateSystemScheme}>
+                    <>
+                        <DeviceIcon />
+                        Preferencia
                     </>
                 </Button>
             </div>

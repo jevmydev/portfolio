@@ -9,10 +9,10 @@ interface PreferenceProviderProps {
 export const PreferenceContext = createContext<PreferenceAllTypes | null>(null);
 
 export const PreferenceProvider = ({ children }: PreferenceProviderProps) => {
-    const { preference, isPreferenceOpen, updateSchemePreference, updateSoundPreference, updatePreference } = usePreferenceConfig();
+    const { preference, isPreferenceOpen, updateSchemePreference, updateSoundPreference, updateSystemScheme, updatePreference } = usePreferenceConfig();
 
     return (
-        <PreferenceContext.Provider value={{ preference, isPreferenceOpen, updateSchemePreference, updateSoundPreference, updatePreference }}>
+        <PreferenceContext.Provider value={{ preference, isPreferenceOpen, updateSchemePreference, updateSoundPreference, updateSystemScheme, updatePreference }}>
             {children}
         </PreferenceContext.Provider>
     );
