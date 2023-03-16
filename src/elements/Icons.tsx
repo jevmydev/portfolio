@@ -12,6 +12,18 @@ export const ConfigIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-cur
     );
 };
 
+export const DeviceIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+    return (
+        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="4" width="18" height="12" rx="1" />
+            <line x1="7" y1="20" x2="17" y2="20" />
+            <line x1="9" y1="16" x2="9" y2="20" />
+            <line x1="15" y1="16" x2="15" y2="20" />
+        </svg>
+    );
+};
+
 export const ExternalLinkIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
     return (
         <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
