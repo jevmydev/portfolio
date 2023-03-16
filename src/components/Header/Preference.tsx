@@ -28,10 +28,10 @@ export const Preference = () => {
                         {isSchemeDarkTitle}
                     </>
                 </Button>
-                <Button title="Preferencia" onClick={updateSystemScheme}>
+                <Button title="Sistema" onClick={updateSystemScheme}>
                     <>
                         <DeviceIcon />
-                        Preferencia
+                        Sistema
                     </>
                 </Button>
             </div>
