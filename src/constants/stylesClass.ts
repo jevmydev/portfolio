@@ -4,7 +4,7 @@ export const INTERACTIVE_ACTIVE_CLASS = "text-primary-blue bg-slate-800 hover:bg
 export const GRADIENT_CLASS = "text-transparent bg-clip-text bg-gradient-to-r from-primary-purple to-primary-pink" as const;
 
 export const TITLE_CLASS = `${GRADIENT_CLASS} font-bold text-center tracking-tight text-7xl sm:text-8xl xl:text-9xl` as const;
-export const SUBTITLE_CLASS = "font-bold text-center tracking-tight text-3xl text-slate-800 dark:text-slate-200 sm:text-4xl xl:text-6xl" as const;
+export const SUBTITLE_CLASS = "font-bold text-center tracking-tight text-3xl text-black dark:text-white sm:text-4xl xl:text-6xl" as const;
 export const SUBTITLE_COLOR_CLASS = `${GRADIENT_CLASS} tracking-tight font-bold text-5xl sm:text-8xl xl:text-9xl` as const;
 
 export const INPUT_CLASS = "w-full outline-none py-2 px-4 bg-transparent text-slate-800 dark:text-slate-200 border-2 border-slate-400/20 rounded transition-colors focus:bg-slate-400/20" as const;
