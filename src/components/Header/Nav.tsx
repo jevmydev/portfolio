@@ -22,7 +22,7 @@ export const Nav = () => {
                 <NavItems updateMenu={updateMenu} />
             </div>
             <div className="relative">
-                <ul className="flex flex-wrap items-center gap-2 relative z-30">
+                <ul className="flex items-center gap-2 relative z-30">
                     <li>
                         <Button title="Configura tus preferencias" onClick={updatePreference}>
                             <ConfigIcon />
