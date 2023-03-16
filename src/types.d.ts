@@ -79,4 +79,5 @@ export interface PreferenceAllTypes {
     updatePreference: () => void;
     updateSchemePreference: () => void;
     updateSoundPreference: () => void;
+    updateSystemScheme: () => void;
 }
