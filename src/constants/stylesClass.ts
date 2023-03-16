@@ -1,4 +1,4 @@
-export const INTERACTIVE_CLASS = "font-medium flex gap-2 items-center justify-start transition-colors rounded hover:text-slate-800 hover:bg-slate-400/20 dark:hover:text-slate-200" as const;
+export const INTERACTIVE_CLASS = "font-medium flex gap-2 items-center justify-start transition rounded hover:text-slate-800 hover:bg-slate-400/20 dark:hover:text-slate-200 active:scale-95" as const;
 export const INTERACTIVE_ACTIVE_CLASS = "text-primary-blue bg-slate-800 hover:bg-slate-400/20" as const;
 
 export const GRADIENT_CLASS = "text-transparent bg-clip-text bg-gradient-to-r from-primary-purple to-primary-pink" as const;
