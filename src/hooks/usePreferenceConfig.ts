@@ -51,7 +51,6 @@ export const usePreferenceConfig = () => {
 
     useEffect(() => {
         const isDarkScheme = preference.scheme === "dark";
-        console.log(isDarkScheme);
 
         document.documentElement.classList.toggle("dark", isDarkScheme);
         document.documentElement.classList.toggle("scheme-dark", isDarkScheme);
