@@ -4,6 +4,7 @@ import Link from "../../elements/Link";
 import NavItems from "../Header/NavItems";
 import ContactSocial from "../Contact/ContactSocial";
 import Blur from "../../elements/Blur";
+import FooterFarewell from "./FooterFarewell";
 
 export const Footer = () => {
     return (
@@ -22,6 +23,9 @@ export const Footer = () => {
                             <CircleIcon width="w-2" fill="fill-green-800 dark:fill-green-400" stroke="stroke-green-400" />
                             <span className="text-green-800 dark:text-green-400">Normal</span>
                         </span>
+                    </div>
+                    <div>
+                        <FooterFarewell />
                     </div>
                 </div>
                 <div className="flex flex-col gap-8 md:items-end">
