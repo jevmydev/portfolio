@@ -8,7 +8,7 @@ export const Link: React.FC<LinkTypesProps> = ({ href, title, target, removeSpac
     const linkClass = `${activeClass} ${removeSpacingClass} ${INTERACTIVE_CLASS}`.trim();
 
     return (
-        <a className={linkClass} href={href} title={title} target={target} onClick={onClick} rel="noopener noreferrer">
+        <a className={linkClass} href={href} title={title} target={target} rel="noopener noreferrer" onClick={onClick}>
             {children}
         </a>
     );
