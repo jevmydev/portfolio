@@ -1,6 +1,7 @@
 import { v4 as uuid } from "uuid";
 import {
     BashIcon,
+    BootstrapIcon,
     CSSIcon,
     EsbuildIcon,
     EslintIcon,
@@ -13,6 +14,7 @@ import {
     PythonIcon,
     ReactIcon,
     SassIcon,
+    StyledComponentsIcon,
     SublimeTextIcon,
     TailwindIcon,
     TypeScriptIcon,
@@ -41,6 +43,16 @@ export const skills = [
         id: uuid(),
         title: "TailwindCSS",
         Icon: TailwindIcon
+    },
+    {
+        id: uuid(),
+        title: "Styled Components",
+        Icon: StyledComponentsIcon
+    },
+    {
+        id: uuid(),
+        title: "Bootstrap",
+        Icon: BootstrapIcon
     },
     {
         id: uuid(),
