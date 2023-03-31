@@ -4,7 +4,7 @@ export const FooterFarewell = () => {
         weekday: "long"
     }).format(date);
 
-    return <span>Feliz {formattedDate}</span>;
+    return <span className="dark:text-primary-blue">Feliz {formattedDate}</span>;
 };
 
 export default FooterFarewell;
