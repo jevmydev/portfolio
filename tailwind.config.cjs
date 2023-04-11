@@ -12,10 +12,10 @@ module.exports = {
                 "semi-white": "rgb(245 247 249)"
             },
             textColor: {
-                "primary-blue": "rgb(116 186 255)"
+                "primary-blue": "rgb(96 175 252)"
             },
             gradientColorStops: {
-                "primary-purple": "rgb(121 40 202)",
+                "primary-purple": "rgb(133 39 227)",
                 "primary-pink": "rgb(255 0 128)",
                 "semi-dark": "rgb(10 12 14)",
                 "semi-white": "rgb(245 247 249)"
