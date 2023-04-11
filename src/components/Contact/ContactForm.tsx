@@ -24,7 +24,7 @@ export const ContactForm = () => {
         <form className="flex flex-col gap-4 w-full" method="POST" onSubmit={handleSubmit}>
             <label className="flex flex-col gap-2">
                 Email
-                <input className={inputClass} name="email" type="text" placeholder="example@example.com" onChange={handleChange} />
+                <input className={inputClass} name="email" type="text" placeholder="ejemplo@ejemplo.com" onChange={handleChange} />
             </label>
             <label className="flex flex-col gap-2">
                 Mensaje
