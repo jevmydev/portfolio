@@ -9,7 +9,7 @@ export const FooterFarewell = () => {
     return (
         <p>
             <span className="dark:text-primary-blue block">Feliz {formattedDate} crack :)</span>
-            <span className={`font-bold ${GRADIENT_CLASS}`}>Return: Soon (I ❤ this, but things in life, although Im younger)</span>
+            <span className={`font-bold ${GRADIENT_CLASS}`}>Im alive</span>
         </p>
     );
 };
