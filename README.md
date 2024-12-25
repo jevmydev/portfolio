@@ -20,7 +20,8 @@ Mi perfil profesional con más de **dos años desarrollando** experiencias de us
 # ¿Quieres saber más de mí?
 
 -   Portfolio 2022: [https://oldjeremydiaz.netlify.app](https://oldjeremydiaz.netlify.app)
--   Contáctame: [https://jeremydiaz.netlify.app/social](https://jeremydiaz.netlify.app/social)
+-   Redes sociales: [https://jeremydiaz.netlify.app/social](https://jeremydiaz.netlify.app/social)
+-   Contáctame: [https://jeremydiaz.netlify.app/#contact](https://jeremydiaz.netlify.app/#contact)
 
 # Instalación y uso 🎖️
 
