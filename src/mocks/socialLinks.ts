@@ -13,7 +13,7 @@ export const socialLinks = [
         id: uuid(),
         href: "https://www.linkedin.com/in/jevmydev",
         title: "LinkedIn",
-        isActive: false,
+        isActive: true,
         Icon: LinkedInIcon
     },
     {
