@@ -21,6 +21,7 @@ export interface LinkTypesProps {
     title: string;
     removeSpacing?: boolean;
     isActive?: boolean;
+    isCenter?: boolean;
     children: JSX.Element | string;
     onClick?: () => void;
 }
@@ -80,4 +81,9 @@ export interface PreferenceAllTypes {
     updateSchemePreference: () => void;
     updateSoundPreference: () => void;
     updateSystemScheme: () => void;
+}
+
+export interface HolidaysTypes {
+    date: string;
+    message: string;
 }
