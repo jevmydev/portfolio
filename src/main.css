@@ -1,17 +1,30 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/Inter.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
     .menu-top {
-        transform: translate(0.93rem, -0.6rem) rotate(45deg);
+        transform: translate(0.9rem, -0.6rem) rotate(45deg);
     }
 
     .menu-bottom {
-        transform: translate(-0.93rem, 1.87rem) rotate(-45deg);
+        transform: translate(-0.9rem, 1.5rem) rotate(-45deg);
     }
 
     .scheme-dark {
         color-scheme: dark;
+    }
+
+    .parallel-r {
+        clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    }
+
+    .parallel-l {
+        clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
     }
 }
