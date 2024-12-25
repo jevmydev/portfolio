@@ -9,7 +9,7 @@ export const SkillsSliderItem: React.FC<SkillsSliderItemProps> = ({ skill }) => 
 
     return (
         <li>
-            <div className="flex items-center gap-2 whitespace-nowrap">
+            <div className="flex items-center gap-2 whitespace-nowrap flex-shrink-0">
                 <Icon />
                 <span>{title}</span>
             </div>
