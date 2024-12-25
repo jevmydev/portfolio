@@ -1,7 +1,7 @@
-import { SUBTITLE_COLOR_CLASS } from "../../constants/stylesClass";
-
 import Strong from "../../elements/Strong";
 import AboutStats from "./AboutStats";
+
+import { SUBTITLE_COLOR_CLASS } from "../../constants/stylesClass";
 
 export const About = () => {
     const subtitleClass = SUBTITLE_COLOR_CLASS;
@@ -10,7 +10,7 @@ export const About = () => {
         <section id="about">
             <div className="max-w-screen-xl mx-auto pt-28 p-4">
                 <h2 className={subtitleClass}>Sobre mí</h2>
-                <div className="pt-20 flex gap-8 flex-col justify-start items-start lg:items-center lg:justify-between lg:flex-row">
+                <div className="pt-20 flex gap-8 flex-col justify-start items-start lg:justify-between lg:flex-row">
                     <div className="max-w-xl flex flex-col gap-2">
                         <p>
                             Comencé mi aprendizaje de <Strong>forma autodidacta</Strong> utilizando diversos recursos como tutoriales, directos, blogs, lecturas y proyectos personales.
