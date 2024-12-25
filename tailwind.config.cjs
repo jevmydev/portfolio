@@ -5,11 +5,12 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                system: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif'
+                inter: 'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif'
             },
             backgroundColor: {
                 "semi-dark": "rgb(10 12 14)",
-                "semi-white": "rgb(245 247 249)"
+                "semi-white": "rgb(245 247 249)",
+                "primary-blue": "rgb(96 175 252)"
             },
             textColor: {
                 "primary-blue": "rgb(96 175 252)"
@@ -22,18 +23,18 @@ module.exports = {
             }
         },
         animation: {
-            slider: "slider 20s linear alternate infinite",
+            slider: "slider 20s linear infinite alternate",
             arrow: "arrow 1.5s ease-in-out infinite",
             greeting: "greeting 2s linear infinite alternate",
-            fadeIn: "fadeIn 1s ease"
+            fadeIn: "fadeIn 1.5s ease"
         },
         keyframes: {
             slider: {
                 from: {
-                    transform: "translate(0)"
+                    transform: "translateX(6rem)"
                 },
                 to: {
-                    transform: "translateX(-100%)"
+                    transform: "translateX(-50%)"
                 }
             },
             arrow: {
@@ -68,12 +69,10 @@ module.exports = {
             },
             fadeIn: {
                 "0%": {
-                    opacity: "0",
-                    transform: "translate3d(0, 1rem, 0)"
+                    opacity: "0"
                 },
                 "100%": {
-                    opacity: "1",
-                    transform: "translate3d(0, 0, 0)"
+                    opacity: "1"
                 }
             }
         }
