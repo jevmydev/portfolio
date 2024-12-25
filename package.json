@@ -1,6 +1,6 @@
 {
     "name": "portfolio",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -10,7 +10,8 @@
         "format": "prettier . --write"
     },
     "dependencies": {
-        "react": "18.2.0",
+        "react": "^18.2.0",
+        "react-confetti": "^6.1.0",
         "react-dom": "18.2.0",
         "uuid": "9.0.0",
         "wouter": "2.10.0"
