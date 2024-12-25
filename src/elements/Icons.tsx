@@ -41,36 +41,39 @@ export const MenuIcon = ({ width = "w-7", height = "h-7", fill = "fill-current",
 
     return (
         <svg className={`${width} ${height} ${fill}`} viewBox="0 0 80 40">
-            <rect className={`transition-transform ${isMenuOpenRectTopClass}`} width="90" height="10" />
-            <rect className={`transition-transform ${isMenuOpenRectBottomClass}`} width="90" height="10" y="30" />
+            <rect className={`transition-transform ${isMenuOpenRectTopClass}`} width="100%" height="7" />
+            <rect className={`transition-transform ${isMenuOpenRectBottomClass}`} width="100%" height="7" y="30" />
         </svg>
     );
 };
 
-export const SoundIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+export const SoundIcon = ({ width = "w-7", height = "h-7", fill = "fill-current" }) => {
     return (
-        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M15 8a5 5 0 0 1 0 8" />
-            <path d="M17.7 5a9 9 0 0 1 0 14" />
-            <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+        <svg className={`${width} ${height} ${fill}`} viewBox="0 0 512 512">
+            <g strokeWidth="1" fillRule="evenodd">
+                <g transform="translate(42.666667, 85.333333)">
+                    <path d="M361.299413,341.610667 L328.014293,314.98176 C402.206933,233.906133 402.206933,109.96608 328.013013,28.8906667 L361.298133,2.26304 C447.910187,98.97536 447.908907,244.898347 361.299413,341.610667 Z M276.912853,69.77216 L243.588693,96.4309333 C283.38432,138.998613 283.38304,204.87488 243.589973,247.44256 L276.914133,274.101333 C329.118507,215.880107 329.118507,127.992107 276.912853,69.77216 Z M191.749973,1.42108547e-14 L80.8957867,87.2292267 L7.10542736e-15,87.2292267 L7.10542736e-15,257.895893 L81.0208,257.895893 L191.749973,343.35424 L191.749973,1.42108547e-14 L191.749973,1.42108547e-14 Z"></path>
+                </g>
+            </g>
         </svg>
     );
 };
 
-export const MuteIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+export const MuteIcon = ({ width = "w-7", height = "h-7", fill = "fill-current" }) => {
     return (
-        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
-            <path d="M16 10l4 4m0 -4l-4 4" />
+        <svg className={`${width} ${height} ${fill}`} viewBox="0 0 512 512">
+            <g strokeWidth="1" fillRule="evenodd">
+                <g transform="translate(42.666667, 59.581722)">
+                    <path d="M47.0849493,-1.42108547e-14 L298.668,251.583611 L304.101001,257.015597 L304.101,257.016 L353.573532,306.488791 C353.573732,306.488458 353.573933,306.488124 353.574133,306.48779 L384.435257,337.348961 L384.434,337.349 L409.751616,362.666662 L379.581717,392.836561 L191.749,205.003 L191.749973,369.105851 L81.0208,283.647505 L7.10542736e-15,283.647505 L7.10542736e-15,112.980838 L80.8957867,112.980838 L91.433,104.688 L16.9150553,30.169894 L47.0849493,-1.42108547e-14 Z M361.298133,28.0146513 C429.037729,103.653701 443.797162,209.394226 405.578884,298.151284 L372.628394,265.201173 C396.498256,194.197542 381.626623,113.228555 328.013013,54.642278 L361.298133,28.0146513 Z M276.912853,95.5237713 C305.539387,127.448193 318.4688,168.293162 315.701304,208.275874 L266.464558,159.040303 C261.641821,146.125608 254.316511,133.919279 244.488548,123.156461 L243.588693,122.182545 L276.912853,95.5237713 Z M191.749973,25.7516113 L191.749,84.3256113 L158.969,51.5456113 L191.749973,25.7516113 Z"></path>
+                </g>
+            </g>
         </svg>
     );
 };
 
-export const SunIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+export const SunIcon = ({ width = "w-7", height = "h-7", fill = "fill-current", stroke = "stroke-current" }) => {
     return (
-        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+        <svg className={`${width} ${height} ${fill} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <circle cx="12" cy="12" r="4" />
             <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
@@ -78,9 +81,9 @@ export const SunIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-curren
     );
 };
 
-export const MoonIcon = ({ width = "w-7", height = "h-7", stroke = "stroke-current" }) => {
+export const MoonIcon = ({ width = "w-7", height = "h-7", fill = "fill-current" }) => {
     return (
-        <svg className={`${width} ${height} ${stroke}`} viewBox="0 0 24 24" stroke="none" fill="none">
+        <svg className={`${width} ${height} ${fill}`} viewBox="0 0 24 24" stroke="none" fill="none">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
         </svg>
@@ -132,6 +135,16 @@ export const ArrowDownIcon = ({ width = "w-7", height = "h-7", fill = "fill-curr
     return (
         <svg className={`${width} ${height} ${fill}`} viewBox="0 0 960 560">
             <path d="M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937   c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937   c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z" />
+        </svg>
+    );
+};
+
+export const CheckedIcon = ({ width = "w-3", height = "h-3", sound = false }) => {
+    return (
+        <svg className={`${width} ${height} ${sound ? "" : "fill-none"}`} viewBox="0 0 415.582 415.582">
+            <g>
+                <path d="M411.47,96.426l-46.319-46.32c-5.482-5.482-14.371-5.482-19.853,0L152.348,243.058l-82.066-82.064   c-5.48-5.482-14.37-5.482-19.851,0l-46.319,46.32c-5.482,5.481-5.482,14.37,0,19.852l138.311,138.31   c2.741,2.742,6.334,4.112,9.926,4.112c3.593,0,7.186-1.37,9.926-4.112L411.47,116.277c2.633-2.632,4.111-6.203,4.111-9.925   C415.582,102.628,414.103,99.059,411.47,96.426z" />
+            </g>
         </svg>
     );
 };
