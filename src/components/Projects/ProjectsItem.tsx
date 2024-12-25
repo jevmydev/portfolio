@@ -15,6 +15,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({ project, isPictureRi
 
     const subtitleClass = SUBTITLE_CLASS;
     const orderPictureClass = isPictureRightOrder ? "w-full sm:w-auto sm:order-2" : "w-full sm:w-auto sm:order-0";
+    const clipPathClass = isPictureRightOrder ? "parallel-r" : "parallel-l";
 
     return (
         <article className="flex flex-col gap-8 items-center justify-between sm:flex-row">
@@ -50,7 +51,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({ project, isPictureRi
             </div>
             <aside className={orderPictureClass}>
                 <picture>
-                    <img className="aspect-video rounded object-cover w-full sm:max-w-md" src={picture} alt={`Imagen del proyecto de ${title}`} loading="lazy" decoding="async" />
+                    <img className={`${clipPathClass} rounded object-cover w-full`} src={picture} alt={`Imagen del proyecto de ${title}`} loading="lazy" decoding="async" />
                 </picture>
             </aside>
         </article>

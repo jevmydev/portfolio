@@ -7,9 +7,11 @@ export const ProjectsMore = () => {
             <div className="hidden sm:block">
                 <Blur />
             </div>
-            <Link href="https://github.com/jevmydev?tab=repositories" title="Revisa otros proyectos en Github" target="_blank" isActive>
-                ¡Revisa otros proyectos!
-            </Link>
+            <div className="w-full sm:flex sm:justify-center">
+                <Link href="https://github.com/jevmydev?tab=repositories" title="Revisa otros proyectos en Github" target="_blank" isActive isCenter>
+                    ¡Revisa mis otros proyectos!
+                </Link>
+            </div>
         </div>
     );
 };
