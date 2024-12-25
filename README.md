@@ -1,6 +1,6 @@
 # Portfolio de Jeremy Díaz 👋
 
-Mi perfil profesional con más de **dos años desarrollando** experiencias de usuario **atractivas y funcionales**.
+Mi perfil profesional con más de **tres años desarrollando** experiencias de usuario **atractivas y funcionales**.
 
 👉 Enlace: [https://jeremydiaz.netlify.app/](https://jeremydiaz.netlify.app/)
 
